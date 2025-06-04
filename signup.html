@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 50px;
+    }
+    .signup-container {
+      background: white;
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .signup-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .signup-container button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .signup-container button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h2>Create Account</h2>
+  <form id="signup-form">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+
+
+
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+
+<script>
+    const firebaseConfig = {  
+  apiKey: "AIzaSyBtz9yTI1cpUTc3ED-FxXdvozR1K6hbh2c",
+  authDomain: "smartstorefront-7292b.firebaseapp.com",
+  projectId: "smartstorefront-7292b",
+  storageBucket: "smartstorefront-7292b.firebasestorage.app",
+  messagingSenderId: "1005503417870",
+  appId: "1:1005503417870:web:4eaef3f39493c99909765f",
+  measurementId: "G-QYHWY34F7D"
+};
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="SCRIPT/signup.js"></script>
+
+</body>
+</html>

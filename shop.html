@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="STYLE/shop.css">
+</head>
+<body>
+    <div class="shop-container">
+        <!-- Sidebar Filters -->
+        <aside class="filters">
+          <h3>Filter By</h3>
+           
+          <div class="filter-group">
+            <h4>Category</h4>
+            <label><input type="checkbox" /> Fashion</label>
+            <label><input type="checkbox" /> Electronics</label>
+            <label><input type="checkbox" /> Furniture</label>
+            <label><input type="checkbox" /> Beauty</label>
+          </div>
+      
+          <div class="filter-group">
+            <h4>Price</h4>
+            <label>Min: <input type="number" placeholder="0" /></label><br />
+            <label>Max: <input type="number" placeholder="1000" /></label>
+          </div>
+      
+          <div class="filter-group">
+            <h4>Rating</h4>
+            <label><input type="checkbox" /> ★★★★★</label>
+            <label><input type="checkbox" /> ★★★★ & up</label>
+            <label><input type="checkbox" /> ★★★ & up</label>
+          </div>
+        </aside>
+      
+        <!-- Main Product Section -->
+        <section class="products-section">
+          <!-- Sorting -->
+          <div class="sort-bar">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+              <option value="default">Default</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="popularity">Popularity</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+      
+          <!-- Your existing product cards go here -->
+          <div class="product-grid">
+            <!-- ... -->
+          </div>
+        </section>
+      </div>
+      
+</body>
+</html>

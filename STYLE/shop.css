@@ -1,0 +1,91 @@
+/* .shop-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .filters {
+    width: 250px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .products-section {
+    flex: 1;
+  }
+  
+  .sort-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .sort-bar select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }  */
+
+
+ /* Container setup */
+.shop-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Sidebar Styling */
+.filter-sidebar {
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.filter-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Section spacing */
+.filter-group {
+  margin-bottom: 2rem;
+}
+
+/* Labels and Inputs */
+.filter-group label {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.filter-group input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Rating checkboxes */
+.rating-label {
+  font-size: 1rem;
+  color: #f5b301;
+}
+ 

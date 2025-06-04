@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Storefront</title>
+    <link rel="stylesheet" href="STYLE/smartstore.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Smartstores</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Compare</a>
+            <a href="login.html">Login</a>/<a href="signup.html">Sign Up</a>
+        </nav>
+
+        <!-- <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home & Offices</a></li>
+                <li><a href="#">Health & Beauty</a></li>
+                <li><a href="#">Phones & Tablets</a></li>
+                <li><a href="#">Groceries</a></li>
+            </ul>
+        </nav> -->
+
+        
+        <div class="nav-icons">
+            <span>🔍</span>
+            <span>🛒</span>
+            <span>👤</span>
+            <span>🌙</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Smart Storefront</h1>
+        <p>Shop smarter with your personal assistant</p>
+        <a href="#" class="btn">Start Shopping</a>
+    </section>
+
+    <!-- Categories Section -->
+     <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-card">
+                <img src="Images/fashion-img.png" alt="Fashion">
+                <p>Fashion</p>
+            </div>
+            <div class="category-card">
+                <img src="Images/electronics.jpg" alt="Electronics">
+                <p>Electronics</p>
+            </div>
+            <div class="category-card">
+                <img src="Images/home decor img.jpg" alt="Home Decor">
+                <p>Home Decor</p>
+            </div>
+            <div class="category-card">
+                <img src="Images/beauty img.jpg" alt="Beauty">
+                <p>Beauty</p>
+            </div>
+        </div>
+     </section>
+     <div style="height: 150px;"></div> 
+
+     <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="badge new">Sale</span>
+                <img src="Images/product1.jpg" alt="">
+                <h3>Smart Watch</h3>
+                <p class="price">$79.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <span class="badge">Sale</span>
+                <img src="Images/product2.jpg" alt="">
+                <h3>Wireless Earbuds</h3>
+                <p class="price">$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <span class="badge">New</span>
+                <img src="Images/product4.jpg" alt="">
+                <h3>Home Decor Lamps</h3>
+                <p class="price">$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <span class="badge sold">Sold-Out</span>
+                <span class="wishlist-btn">🤍</span>
+                <img src="Images/product6.jpg" alt="">
+                <h3>Sneakers</h3>
+                <p class="price">$20,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+     </section>
+
+     <section class="why-shop">
+        <h2>Why Shop With Us</h2>
+        <div class="benefit-list">
+            <div class="benefit-card">
+                <img src="Images/free_shipping_icon.png" alt="">
+                <h3>Free Shipping</h3>
+                <p>Get free shipping on orders above $20,000.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="Images/secure_icon.png" alt="">
+                <h3>Secure Payment</h3>
+                <p>Your transactions are  protected with the highest encryption.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="Images/support_icon.png" alt="">
+                <h3>24/7 Support</h3>
+                <p>Need help? We're always here for you.</p>
+            </div>
+            <div class="benefit-card">
+                <img src="Images/easy_returns_icon.png" alt="">
+                <h3>Easy Returns</h3>
+                <p>Hassle-free returns within 7 days of purchase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <div class="promo-content">
+            <h2>🔥 Limited Time Offer!</h2>
+            <p>Get up to <strong>50% off</strong> on selected items today only.</p>
+            <a href="#shop" class="promo-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="testimonial-carousel">
+        <h2>Customers Review</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <p>"Love the fast delivery and good quality!"</p>
+                    <h4>- Aisha</h4>
+                </div>
+                <div class="carousel-item">
+                    <p>"Top-notch fashion and tech in one place!"</p>
+                    <h4>- Zahra</h4>
+                </div>
+                <div class="carousel-item">
+                <p>"Great service, I'm definitely buying again."</p>
+                <h4>- Salam</h4>
+                </div>
+            </div>
+        <button class="prev">←</button>
+        <button class="next">→</button>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join Our Newsletter</h2>
+            <p>Get exclusive deals, new arrivals, and insider-only discounts!</p>
+            <form action="" class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+ <script src="SCRIPT/smart-store.js"></script>
+</body>
+</html>

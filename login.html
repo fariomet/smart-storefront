@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="STYLE/login.css">
+</head>
+<body>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+    
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyBtz9yTI1cpUTc3ED-FxXdvozR1K6hbh2c",
+        authDomain: "smartstorefront-7292b.firebaseapp.com",
+        projectId: "smartstorefront-7292b",
+        storageBucket: "smartstorefront-7292b.firebasestorage.app",
+        messagingSenderId: "1005503417870",
+        appId: "1:1005503417870:web:4eaef3f39493c99909765f",
+        measurementId: "G-QYHWY34F7D"
+      };
+      
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+<script src="SCRIPT/login.js"></script>
+
+</body>
+</html>
