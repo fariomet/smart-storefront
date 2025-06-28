@@ -5,16 +5,13 @@ let lastScrollTop = 0;
   window.addEventListener('scroll', function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-      // Scrolling down
-      navbar.classList.remove('show');
-    //   navbar.classList.add('hide');
-    } else {
-      // Scrolling up
-    //   navbar.classList.remove('hide');
-      navbar.classList.add('show');
-    }
+    if (lastScrollTop > scrollTop) {
+      navbar.style.transform = 'translateY(0)'; // Show navbar
+  } else {
+      navbar.style.transform = 'translateY(-100%)'; // Hide navbar
+  }
 
+   
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Safari
   });
 
@@ -74,3 +71,17 @@ let lastScrollTop = 0;
   // Handle window resize
   window.addEventListener('resize', updateCarousel);
 
+  // Autoplay Carousel
+setInterval(() => {
+  if (currentIndex < track.children.length - 1) {
+      currentIndex++;
+  } else {
+      currentIndex = 0;
+  }
+  updateCarousel();
+}, 5000);
+
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  navMenu.classList.toggle("active");
+}

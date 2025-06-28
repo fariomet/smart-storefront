@@ -9,38 +9,32 @@
 <body>
     <header class="navbar">
         <div class="logo">Smartstores</div>
-        <nav class="nav-links">
+         <div class="hamburger" onclick="toggleMenu()" title="click-here">☰</div>
+
+        <nav class="nav-links" id="navMenu">
             <a href="index.html">Home</a>
             <a href="shop.html">Shop</a>
             <a href="#">Wishlist</a>
             <a href="#">Compare</a>
-            <a href="login.html">Login</a>/<a href="signup.html">Sign Up</a>
+            <div class="login-signup">
+            <a href="login.html">Login</a><a href="signup.html">Sign Up</a>
+            </div>
         </nav>
-
-        <!-- <nav class="main-nav">
-            <ul class="nav-menu">
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Home & Offices</a></li>
-                <li><a href="#">Health & Beauty</a></li>
-                <li><a href="#">Phones & Tablets</a></li>
-                <li><a href="#">Groceries</a></li>
-            </ul>
-        </nav> -->
 
         
         <div class="nav-icons">
             <span>🔍</span>
             <span>🛒</span>
             <span>👤</span>
-            <span>🌙</span>
+            <span><a href="shop.html"></a>🌙</span>
         </div>
+        
     </header>
 
     <section class="hero">
         <h1>Welcome to Smart Storefront</h1>
         <p>Shop smarter with your personal assistant</p>
-        <a href="#" class="btn">Start Shopping</a>
+        <a href="shop.html" class="btn">Start Shopping</a>
     </section>
 
     <!-- Categories Section -->
@@ -66,6 +60,14 @@
         </div>
      </section>
      <div style="height: 150px;"></div> 
+
+     <section class="promo-banner">
+        <div class="promo-content">
+            <h2>🔥 Limited Time Offer!</h2>
+            <p>Get up to <strong>50% off</strong> on selected items today only.</p>
+            <a href="shop.html" class="promo-btn">Shop Now</a>
+        </div>
+    </section>
 
      <section class="featured-products">
         <h2>Featured Products</h2>
@@ -102,6 +104,8 @@
         </div>
      </section>
 
+    
+
      <section class="why-shop">
         <h2>Why Shop With Us</h2>
         <div class="benefit-list">
@@ -128,13 +132,7 @@
         </div>
     </section>
 
-    <section class="promo-banner">
-        <div class="promo-content">
-            <h2>🔥 Limited Time Offer!</h2>
-            <p>Get up to <strong>50% off</strong> on selected items today only.</p>
-            <a href="#shop" class="promo-btn">Shop Now</a>
-        </div>
-    </section>
+   
 
     <section class="testimonial-carousel">
         <h2>Customers Review</h2>
